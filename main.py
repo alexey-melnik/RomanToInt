@@ -25,12 +25,6 @@ class Solution:
             if not symbol in rule_add.keys():
                 raise Exception('Недопустимые символы')
 
-        # if not (s.count('V') or s.count('L') or s.count('D')) <= 1:
-        #     raise Exception('Цифры V, L, D не могут повторяться')
-        #
-        # if s.count('IIII') or s.count('XXXX') or s.count('CCCC') or s.count('MMMM'):
-        #     raise Exception('Цифры I, X, C, M не могут повторяться больше трёх раз подряд')
-
         number = 0
         prev_symbol = None
         for symbol in s:  # итерируемся по строке
